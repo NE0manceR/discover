@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: #090F1D;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav__link {
+    position: relative;
+    padding: 10px 20px;
+    transition: 0.4;
+    /* margin-right: 40px; */
+}
+
+.nav__link::before {
+    position: absolute;
+    left: 0;
+    display: none;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.nav__link:hover::before {
+    display: block;
+}
+
+.drop-down .nav__link::before {
+    display: none;
+}
+
+.nav {
+    height: max-content;
+}
+
+.header__btn {
+    background-color: #413A6C;
+    padding: 14px 40px;
+    /* width: 140px;
+    height: 48px; */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.header__burder-btn {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #413A6C;
+    cursor: pointer;
+}
+
+.header__burder-btn span {
+    height: 2px;
+    width: 40px;
+    background-color: white;
+}
+
+.drop-down {
+    position: relative;
+}
+
+.drop-down__menu {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    width: max-content;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+
+
+.drop-down__menu a {
+    color: black;
+    padding: 10px 16px;
+}
+
+.drop-down__menu a:hover {
+    background-color: rgb(162, 194, 194);
+}
+
+.drop-down:hover .drop-down__menu {
+    display: flex;
+}
+
+@media (max-width: 1290px) {
+    .header {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 760px) {
+    .nav {
+        display: none;
+    }
+
+    .header__burder-btn {
+        display: flex;
+    }
+}
