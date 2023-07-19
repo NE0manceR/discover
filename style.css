@@ -354,6 +354,7 @@ body {
 
 .black-bcg {
     position: fixed;
+    display: none;
     height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -364,13 +365,17 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 80%;
     background-color: rgba(65, 58, 108, 1);
     z-index: 2;
+}
+
+.mobile-menu.active {
+    display: flex;
 }
 
 .mobile__nav-list {
@@ -388,5 +393,6 @@ body {
     top: 24px;
     width: 24px;
     height: 24px;
+    cursor: pointer;
 }
 /* Mobile menu end */
