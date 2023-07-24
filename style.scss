@@ -1,3 +1,5 @@
+@import './scss/_main-art';
+
 * {
     padding: 0;
     margin: 0;
@@ -176,7 +178,7 @@ body {
     line-height: 160%;
 }
 
-.main__primary-btn {
+.primary-btn {
     padding: 12px 40px;
     border-radius: 8px;
     background: rgba(65, 58, 108, 0.85);
@@ -188,11 +190,11 @@ body {
     margin-bottom: 72px;
 }
 
-.main__primary-btn:hover {
+.primary-btn:hover {
     background: rgba(44, 39, 76, 0.85);
 }
 
-.main__primary-btn:active,
+.primary-btn:active,
 .second-btn:active {
     transform: scale(0.95, 0.95);
 }
@@ -307,6 +309,7 @@ body {
     .main {
         gap: 0;
         height: auto;
+        margin-bottom: 120px;
     }
 }
 
@@ -397,7 +400,3 @@ body {
 
 
 /* art start */
-.art {
-    
-
-}
