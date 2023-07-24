@@ -16,4 +16,3 @@ function closeMenu() {
     mobile_menu.style.display = 'none';
     black_bcg.style.display = 'none';
 }
-
