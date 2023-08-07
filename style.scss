@@ -1,4 +1,5 @@
 @import './scss/_main-art';
+@import './scss/_nft';
 
 * {
     padding: 0;
@@ -361,6 +362,7 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
+
 /* Mobile menu start */
 .mobile-menu {
     position: fixed;
@@ -396,6 +398,19 @@ body {
     height: 24px;
     cursor: pointer;
 }
+
+label,
+.modal-header h1 {
+    color: black;
+    font-weight: 600;
+}
+
+.form-control.error {
+    border: 2px solid red;
+}
+
+
+
 /* Mobile menu end */
 
 

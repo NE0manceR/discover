@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.min.css">
 </head>
 
@@ -143,10 +148,14 @@
                     Unique Art of This
                     <span class="text-color-decoration">Week</span>
                 </h2>
-                <button class="primary-btn">See All</button>
+                <button class="primary-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add</button>
+            </div>
+            <div class="art__search">
+                <input type="text">
+                <button class="primary-btn">search</button>
             </div>
             <div class="art__cards-wrap">
-                <div class="card">
+                <!-- <div class="card">
                     <img class="card__img" src="./image/test-img.png" alt="img">
                     <div class="card__name-wrap">
                         <h4 class="card__name">Cyberpunk Cocomo</h4>
@@ -229,10 +238,68 @@
                             </span>
                         </div>
                         <button class="second-btn">Place A Bid</button>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- <section class="nft container">
+            <div class="main__content-block">
+                <h1 class="main__title">
+                    Create And Sell
+                    Your
+                    <span class="text-color-decoration">
+                        Best NFTs
+                    </span>
+                </h1>
+                <span class="main__description">
+                    Start exploring the world of digital art and NFTs today and take control of your digital assets with
+                    confidence!
+                </span>
+                <div class="main__btn-container">
+                    <button class="primary-btn">Create Now</button>
+                    <a class="main__link" href="/">Learn More</a>
+                </div>
+            </div>
+            <div class="nft__img-wrap">
+                <div class="nft__img-1">
+                    <img src="./image/nft-1.png" alt="img">
+                </div>
+                <div class="nft__img-2">
+                    <img src="./image/nft-2.png" alt="img">
+                </div>
+            </div>
+
+        </section> -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Add card</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <label for="">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name">
+
+                                <label for="price" class="form-label">Price</label>
+                                <input type="text" class="form-control" id="price" name="price">
+
+                                <label for="src" class="form-label">Image src</label>
+                                <input type="text" class="form-control" id="src" name="src">
+                            </label>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="primary-btn btn-secondary close-modal" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="primary-btn save-btn">Save changes</button>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <script src="./script.js"></script>
